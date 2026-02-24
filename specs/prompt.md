@@ -59,3 +59,13 @@ Here is a full description of what the UI will look like.
 - **Auth**: GitHub OAuth via NextAuth.js; only the account matching `GITHUB_OWNER` env var has write access
 - **Database**: GitHub-as-DB — `data/events.json` stored in the same repository, read and written via the GitHub Contents API
 - **Deployment**: Netlify with `@netlify/plugin-nextjs`
+
+# Environment variables
+
+| Variable | Description |
+|---|---|
+| `GITHUB_OWNER` | GitHub username — used both to whitelist the write-access account and to identify the repo owner for GitHub Contents API calls |
+| `GITHUB_REPO` | Repository name (e.g. `on-the-edge`) |
+| `GITHUB_TOKEN` | Personal Access Token with `repo` scope — used to read/write `data/events.json` via the GitHub Contents API |
+
+Set these in `.env.local` for local development and in Netlify → Site Settings → Environment Variables for production.
