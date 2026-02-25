@@ -10,15 +10,6 @@
       "description": "Les Sumeriens developpent l'ecriture cuneiforme."
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440002",
-      "year": -27,
-      "name": "Empire romain",
-      "category": "civilization",
-      "endYear": 476,
-      "region": "Europe",
-      "description": "De la fondation de l'Empire par Auguste a la chute de Rome."
-    },
-    {
       "id": "550e8400-e29b-41d4-a716-446655440003",
       "year": 1440,
       "name": "Imprimerie",
