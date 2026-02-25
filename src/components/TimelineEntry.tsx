@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { TimelineEvent, CATEGORIES } from "@/lib/types"
 import { formatYearRange } from "@/lib/format-year"
 import { cn } from "@/lib/utils"
@@ -15,6 +16,7 @@ interface TimelineEntryProps {
 
 export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntryProps) {
   const category = CATEGORIES.find((c) => c.value === event.category)
+  const [descOpen, setDescOpen] = useState(false)
 
   const content = (
     <span className="text-sm">
@@ -40,9 +42,12 @@ export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntr
         <span className="flex-1">
           {content}
           {event.description && (
-            <Tooltip>
+            <Tooltip open={descOpen} onOpenChange={setDescOpen}>
               <TooltipTrigger asChild>
-                <span className="text-muted-foreground hover:text-foreground ml-1.5 inline-flex cursor-help">
+                <span
+                  className="text-muted-foreground hover:text-foreground ml-1.5 inline-flex cursor-pointer"
+                  onClick={() => setDescOpen((v) => !v)}
+                >
                   <Info className="relative top-0.5 h-3.5 w-3.5" />
                 </span>
               </TooltipTrigger>
@@ -55,7 +60,7 @@ export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntr
 
         {/* Edit/Delete icons — visible on hover when owner */}
         {isOwner && (
-          <div className="flex gap-3 opacity-0 transition-opacity group-hover:opacity-100">
+          <div className="flex gap-3 has-hover:opacity-0 has-hover:group-hover:opacity-100">
             <button
               onClick={onEdit}
               className="text-muted-foreground hover:text-foreground"
