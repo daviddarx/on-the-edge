@@ -12,11 +12,11 @@ interface TimelineProps {
 
 export function Timeline({ events, isOwner, onEdit, onDelete }: TimelineProps) {
   if (events.length === 0) {
-    return <p className="mt-8 text-center text-muted-foreground">Aucun événement trouvé.</p>
+    return <p className="text-muted-foreground mt-8 text-center">Aucun événement trouvé.</p>
   }
 
   return (
-    <div className="relative mt-4 ml-1 border-l-2 border-muted">
+    <div className="border-muted relative mt-4 ml-1 border-l-2">
       {events.map((event) => (
         <TimelineEntry
           key={event.id}

@@ -30,7 +30,7 @@ export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntr
       {/* Colored dot */}
       <span
         className={cn(
-          "absolute left-[-6px] top-[16px] h-[10px] w-[10px] rounded-full",
+          "absolute top-[16px] left-[-6px] h-[10px] w-[10px] rounded-full",
           category?.dotClass
         )}
       />
@@ -42,8 +42,8 @@ export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntr
           {event.description && (
             <Tooltip>
               <TooltipTrigger asChild>
-                <span className="ml-1.5 inline-flex text-muted-foreground hover:text-foreground cursor-help">
-                  <Info className="h-3.5 w-3.5 top-0.5 relative" />
+                <span className="text-muted-foreground hover:text-foreground ml-1.5 inline-flex cursor-help">
+                  <Info className="relative top-0.5 h-3.5 w-3.5" />
                 </span>
               </TooltipTrigger>
               <TooltipContent side="bottom">
