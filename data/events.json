@@ -62,6 +62,15 @@
       "endYear": null,
       "region": "USA",
       "description": "Le premier vol motorisé, contrôlé et soutenu d'un aéroplane plus lourd que l'air est attribué aux frères Orville et Wilbur Wright, le 17 décembre 1903 à Kitty Hawk, en Caroline du Nord. "
+    },
+    {
+      "id": "b9d0406b-cfcc-4021-8fb9-eda192d9d312",
+      "year": 1853,
+      "name": "Planeur",
+      "category": "invention",
+      "endYear": null,
+      "region": "Allemagne",
+      "description": "Le premier vol d'un engin plus lourd que l'air non motorisé (plané) a été réalisé bien avant le premier avion à moteur. Des planeurs fonctionnels, ancêtres de l'aviation, ont été testés dès le milieu du XIXe siècle, notamment par George Cayley qui fit voler un planeur dès 1853, suivi de Otto Lilienthal dans les années 1890"
     }
   ]
 }
