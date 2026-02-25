@@ -8,6 +8,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Sur le fil",
   description: "Un coup d'oeil sur les dates importantes de l'histoire humaine.",
+  appleWebApp: {
+    capable: true,
+    title: "Sur le fil",
+    statusBarStyle: "default",
+  },
 }
 
 export default function RootLayout({
@@ -16,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={inter.className}>
         <Providers>{children}</Providers>
       </body>
