@@ -53,6 +53,15 @@
       "endYear": null,
       "region": "USA",
       "description": "Les premiers pistolets, sous forme d'armes à feu de poing primitives, sont apparus en Europe dès le XIVe siècle avec les « canons à main ». Cependant, le terme pistolet désigne souvent des armes plus maniables qui se sont développées au fil des siècles, avec des mécanismes à mèche, à rouet, puis à silex à partir du XVIe siècle."
+    },
+    {
+      "id": "1803c9bb-6da2-4314-93f7-daffe6e4f713",
+      "year": 1903,
+      "name": "Avion motorisé",
+      "category": "invention",
+      "endYear": null,
+      "region": "USA",
+      "description": "Le premier vol motorisé, contrôlé et soutenu d'un aéroplane plus lourd que l'air est attribué aux frères Orville et Wilbur Wright, le 17 décembre 1903 à Kitty Hawk, en Caroline du Nord. "
     }
   ]
 }
