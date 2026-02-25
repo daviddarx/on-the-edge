@@ -35,6 +35,15 @@
       "endYear": null,
       "region": null,
       "description": "Antiquité (-1350 av. J.-C. - 100 ap. J.-C.) : Des étuis en lin fin étaient utilisés en Égypte. Les Romains utilisaient des intestins et vessies d'animaux."
+    },
+    {
+      "id": "32be351f-e1b5-439b-9ccf-8a32f65fdb65",
+      "year": 1945,
+      "name": "LSD",
+      "category": "discovery",
+      "endYear": null,
+      "region": "Suisse",
+      "description": "LSD was first synthesized by Swiss chemist Albert Hofmann on November 16, 1938, at Sandoz Laboratories in Basel, Switzerland. However, its psychoactive properties were not discovered until April 19, 1943, when Hofmann accidentally ingested some of the substance, leading to the first intentional \"acid trip\""
     }
   ]
 }
