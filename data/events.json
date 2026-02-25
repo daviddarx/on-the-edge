@@ -19,15 +19,6 @@
       "description": "Gutenberg invente l'imprimerie a caracteres mobiles."
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440004",
-      "year": 1687,
-      "name": "Lois de Newton",
-      "category": "discovery",
-      "endYear": null,
-      "region": "Angleterre",
-      "description": "Publication des Principia Mathematica."
-    },
-    {
       "id": "550e8400-e29b-41d4-a716-446655440006",
       "year": 1879,
       "name": "Albert Einstein",
