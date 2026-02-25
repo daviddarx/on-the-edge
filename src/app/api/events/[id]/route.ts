@@ -5,10 +5,7 @@ import { getEvents, saveEvents, withRetry } from "@/lib/github"
 import { CATEGORIES } from "@/lib/types"
 
 // PUT /api/events/[id] — Owner only, updates an event
-export async function PUT(
-  request: Request,
-  { params }: { params: Promise<{ id: string }> }
-) {
+export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const session = await requireOwner()
   if (!session) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
@@ -20,16 +17,10 @@ export async function PUT(
   // Validate provided numeric fields
   if (body.year !== undefined) {
     if (typeof body.year !== "number" || !Number.isFinite(body.year)) {
-      return NextResponse.json(
-        { error: "Field 'year' must be a finite number" },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: "Field 'year' must be a finite number" }, { status: 400 })
     }
     if (body.year < -9999 || body.year > 9999) {
-      return NextResponse.json(
-        { error: "Year must be between -9999 and 9999" },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: "Year must be between -9999 and 9999" }, { status: 400 })
     }
   }
   if (body.endYear !== undefined && body.endYear !== null) {
@@ -65,16 +56,13 @@ export async function PUT(
   }
   if (body.region !== undefined && body.region !== null) {
     if (typeof body.region !== "string" || body.region.length > 200) {
-      return NextResponse.json(
-        { error: "Region must be 200 characters or fewer" },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: "Region must be 200 characters or fewer" }, { status: 400 })
     }
   }
 
   // Validate category if provided
   if (body.category) {
-    const validCategories = CATEGORIES.map(c => c.value)
+    const validCategories = CATEGORIES.map((c) => c.value)
     if (!validCategories.includes(body.category)) {
       return NextResponse.json(
         { error: `Invalid category. Must be one of: ${validCategories.join(", ")}` },
@@ -112,18 +100,12 @@ export async function PUT(
       return NextResponse.json({ error: "Event not found" }, { status: 404 })
     }
     console.error(`PUT /api/events/${id} error:`, error)
-    return NextResponse.json(
-      { error: "Failed to update event" },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: "Failed to update event" }, { status: 500 })
   }
 }
 
 // DELETE /api/events/[id] — Owner only, deletes an event
-export async function DELETE(
-  request: Request,
-  { params }: { params: Promise<{ id: string }> }
-) {
+export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const session = await requireOwner()
   if (!session) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
@@ -151,9 +133,6 @@ export async function DELETE(
       return NextResponse.json({ error: "Event not found" }, { status: 404 })
     }
     console.error(`DELETE /api/events/${id} error:`, error)
-    return NextResponse.json(
-      { error: "Failed to delete event" },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: "Failed to delete event" }, { status: 500 })
   }
 }

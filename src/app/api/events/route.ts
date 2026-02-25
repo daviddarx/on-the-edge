@@ -11,10 +11,7 @@ export async function GET() {
     return NextResponse.json(data)
   } catch (error) {
     console.error("GET /api/events error:", error)
-    return NextResponse.json(
-      { error: "Failed to fetch events" },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: "Failed to fetch events" }, { status: 500 })
   }
 }
 
@@ -30,34 +27,19 @@ export async function POST(request: Request) {
 
   // Validate required fields and types
   if (typeof body.year !== "number" || !Number.isFinite(body.year)) {
-    return NextResponse.json(
-      { error: "Field 'year' must be a finite number" },
-      { status: 400 }
-    )
+    return NextResponse.json({ error: "Field 'year' must be a finite number" }, { status: 400 })
   }
   if (body.year < -9999 || body.year > 9999) {
-    return NextResponse.json(
-      { error: "Year must be between -9999 and 9999" },
-      { status: 400 }
-    )
+    return NextResponse.json({ error: "Year must be between -9999 and 9999" }, { status: 400 })
   }
   if (typeof body.name !== "string" || body.name.trim().length === 0) {
-    return NextResponse.json(
-      { error: "Field 'name' is required" },
-      { status: 400 }
-    )
+    return NextResponse.json({ error: "Field 'name' is required" }, { status: 400 })
   }
   if (body.name.length > 500) {
-    return NextResponse.json(
-      { error: "Name must be 500 characters or fewer" },
-      { status: 400 }
-    )
+    return NextResponse.json({ error: "Name must be 500 characters or fewer" }, { status: 400 })
   }
   if (!body.category) {
-    return NextResponse.json(
-      { error: "Field 'category' is required" },
-      { status: 400 }
-    )
+    return NextResponse.json({ error: "Field 'category' is required" }, { status: 400 })
   }
   // Validate optional endYear
   if (body.endYear !== undefined && body.endYear !== null) {
@@ -85,14 +67,11 @@ export async function POST(request: Request) {
   }
   if (body.region !== undefined && body.region !== null) {
     if (typeof body.region !== "string" || body.region.length > 200) {
-      return NextResponse.json(
-        { error: "Region must be 200 characters or fewer" },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: "Region must be 200 characters or fewer" }, { status: 400 })
     }
   }
 
-  const validCategories = CATEGORIES.map(c => c.value)
+  const validCategories = CATEGORIES.map((c) => c.value)
   if (!validCategories.includes(body.category)) {
     return NextResponse.json(
       { error: `Invalid category. Must be one of: ${validCategories.join(", ")}` },
@@ -124,9 +103,6 @@ export async function POST(request: Request) {
     return NextResponse.json(result, { status: 201 })
   } catch (error) {
     console.error("POST /api/events error:", error)
-    return NextResponse.json(
-      { error: "Failed to create event" },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: "Failed to create event" }, { status: 500 })
   }
 }

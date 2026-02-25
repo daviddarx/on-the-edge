@@ -31,13 +31,8 @@ export function TimelineControls({
 }: TimelineControlsProps) {
   return (
     <div className="mt-6 space-y-3">
-      {isOwner && (
-        <Button onClick={onAddNew}>Add a new date</Button>
-      )}
-      <Select
-        value={categoryFilter}
-        onValueChange={(v) => onCategoryChange(v as Category | "all")}
-      >
+      {isOwner && <Button onClick={onAddNew}>Add a new date</Button>}
+      <Select value={categoryFilter} onValueChange={(v) => onCategoryChange(v as Category | "all")}>
         <SelectTrigger>
           <SelectValue placeholder="All categories" />
         </SelectTrigger>

@@ -6,12 +6,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import {
   Select,
   SelectContent,
@@ -27,12 +22,7 @@ interface EventFormModalProps {
   initialData?: TimelineEvent
 }
 
-export function EventFormModal({
-  open,
-  onClose,
-  onSubmit,
-  initialData,
-}: EventFormModalProps) {
+export function EventFormModal({ open, onClose, onSubmit, initialData }: EventFormModalProps) {
   const [year, setYear] = useState("")
   const [name, setName] = useState("")
   const [category, setCategory] = useState<Category | "">("")
@@ -82,9 +72,7 @@ export function EventFormModal({
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>
-            {initialData ? "Edit date" : "Add a new date"}
-          </DialogTitle>
+          <DialogTitle>{initialData ? "Edit date" : "Add a new date"}</DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -110,10 +98,7 @@ export function EventFormModal({
           </div>
           <div>
             <Label htmlFor="category">Category *</Label>
-            <Select
-              value={category}
-              onValueChange={(v) => setCategory(v as Category)}
-            >
+            <Select value={category} onValueChange={(v) => setCategory(v as Category)}>
               <SelectTrigger>
                 <SelectValue placeholder="Select a category" />
               </SelectTrigger>

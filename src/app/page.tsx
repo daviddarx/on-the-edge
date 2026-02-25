@@ -12,10 +12,7 @@ export default async function Home() {
 
   return (
     <main className="mx-auto max-w-[800px] px-5 py-8">
-      <TimelineApp
-        events={data.events}
-        isOwner={session?.isOwner ?? false}
-      />
+      <TimelineApp events={data.events} isOwner={session?.isOwner ?? false} />
     </main>
   )
 }

@@ -4,8 +4,8 @@
  * Negative years display as absolute value + " BC".
  */
 export function formatYear(year: number): string {
-  if (year < 0) return `${Math.abs(year)} BC`;
-  return `${year}`;
+  if (year < 0) return `${Math.abs(year)} BC`
+  return `${year}`
 }
 
 /**
@@ -15,7 +15,7 @@ export function formatYear(year: number): string {
  */
 export function formatYearRange(year: number, endYear?: number | null): string {
   if (endYear != null) {
-    return `${formatYear(year)}-${formatYear(endYear)}`;
+    return `${formatYear(year)}-${formatYear(endYear)}`
   }
-  return formatYear(year);
+  return formatYear(year)
 }

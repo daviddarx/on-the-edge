@@ -3,11 +3,7 @@
 import { TimelineEvent, CATEGORIES } from "@/lib/types"
 import { formatYearRange } from "@/lib/format-year"
 import { cn } from "@/lib/utils"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import { Pencil, Trash2 } from "lucide-react"
 
 interface TimelineEntryProps {
@@ -18,18 +14,14 @@ interface TimelineEntryProps {
 }
 
 export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntryProps) {
-  const category = CATEGORIES.find(c => c.value === event.category)
+  const category = CATEGORIES.find((c) => c.value === event.category)
 
   const content = (
     <span className="text-sm">
-      <span className="font-medium">
-        {formatYearRange(event.year, event.endYear)}
-      </span>
+      <span className="font-medium">{formatYearRange(event.year, event.endYear)}</span>
       {": "}
       {event.name}
-      {event.region && (
-        <span className="text-muted-foreground"> ({event.region})</span>
-      )}
+      {event.region && <span className="text-muted-foreground"> ({event.region})</span>}
     </span>
   )
 

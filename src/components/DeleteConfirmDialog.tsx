@@ -40,19 +40,14 @@ export function DeleteConfirmDialog({
         <DialogHeader>
           <DialogTitle>Delete entry</DialogTitle>
           <DialogDescription>
-            Are you sure you want to delete &ldquo;{eventName}&rdquo;? This action
-            cannot be undone.
+            Are you sure you want to delete &ldquo;{eventName}&rdquo;? This action cannot be undone.
           </DialogDescription>
         </DialogHeader>
         <div className="flex justify-end gap-2">
           <Button variant="outline" onClick={onClose} disabled={loading}>
             Cancel
           </Button>
-          <Button
-            variant="destructive"
-            onClick={handleConfirm}
-            disabled={loading}
-          >
+          <Button variant="destructive" onClick={handleConfirm} disabled={loading}>
             {loading ? "Deleting..." : "Delete"}
           </Button>
         </div>

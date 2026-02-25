@@ -12,11 +12,7 @@ interface TimelineProps {
 
 export function Timeline({ events, isOwner, onEdit, onDelete }: TimelineProps) {
   if (events.length === 0) {
-    return (
-      <p className="mt-8 text-center text-muted-foreground">
-        No events found.
-      </p>
-    )
+    return <p className="mt-8 text-center text-muted-foreground">No events found.</p>
   }
 
   return (

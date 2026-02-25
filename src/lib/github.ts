@@ -59,10 +59,7 @@ export async function saveEvents(
   message: string
 ): Promise<{ sha: string }> {
   const url = getFileUrl()
-  const content = Buffer.from(
-    JSON.stringify(events, null, 2),
-    "utf-8"
-  ).toString("base64")
+  const content = Buffer.from(JSON.stringify(events, null, 2), "utf-8").toString("base64")
 
   const res = await fetch(url, {
     method: "PUT",
@@ -106,10 +103,7 @@ export class ConflictError extends Error {
  * @param fn - Async function to retry. Should include both read and write.
  * @param maxRetries - Maximum number of retry attempts (default: 3)
  */
-export async function withRetry<T>(
-  fn: () => Promise<T>,
-  maxRetries: number = 3
-): Promise<T> {
+export async function withRetry<T>(fn: () => Promise<T>, maxRetries: number = 3): Promise<T> {
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     try {
       return await fn()

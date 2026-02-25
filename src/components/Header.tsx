@@ -15,7 +15,9 @@ export function Header() {
         </p>
       </div>
       {status === "loading" ? (
-        <Button variant="outline" size="sm" disabled>...</Button>
+        <Button variant="outline" size="sm" disabled>
+          ...
+        </Button>
       ) : session ? (
         <Button variant="outline" size="sm" onClick={() => signOut()}>
           Logout

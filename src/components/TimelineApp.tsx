@@ -31,14 +31,13 @@ export function TimelineApp({ events: initialEvents, isOwner }: TimelineAppProps
     let result = events
 
     if (categoryFilter !== "all") {
-      result = result.filter(e => e.category === categoryFilter)
+      result = result.filter((e) => e.category === categoryFilter)
     }
 
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase()
-      result = result.filter(e =>
-        e.name.toLowerCase().includes(q) ||
-        (e.region && e.region.toLowerCase().includes(q))
+      result = result.filter(
+        (e) => e.name.toLowerCase().includes(q) || (e.region && e.region.toLowerCase().includes(q))
       )
     }
 
@@ -49,7 +48,7 @@ export function TimelineApp({ events: initialEvents, isOwner }: TimelineAppProps
     const tempId = crypto.randomUUID()
     const optimisticEvent: TimelineEvent = { ...data, id: tempId }
 
-    setEvents(prev => [...prev, optimisticEvent])
+    setEvents((prev) => [...prev, optimisticEvent])
 
     try {
       const res = await fetch("/api/events", {
@@ -59,17 +58,17 @@ export function TimelineApp({ events: initialEvents, isOwner }: TimelineAppProps
       })
       if (!res.ok) throw new Error("Failed to create")
       const savedEvent = await res.json()
-      setEvents(prev => prev.map(e => e.id === tempId ? savedEvent : e))
+      setEvents((prev) => prev.map((e) => (e.id === tempId ? savedEvent : e)))
     } catch {
-      setEvents(prev => prev.filter(e => e.id !== tempId))
+      setEvents((prev) => prev.filter((e) => e.id !== tempId))
     }
   }
 
   async function handleEditEvent(id: string, data: Partial<TimelineEvent>) {
-    const original = events.find(e => e.id === id)
+    const original = events.find((e) => e.id === id)
     if (!original) return
 
-    setEvents(prev => prev.map(e => e.id === id ? { ...e, ...data } : e))
+    setEvents((prev) => prev.map((e) => (e.id === id ? { ...e, ...data } : e)))
 
     try {
       const res = await fetch(`/api/events/${id}`, {
@@ -79,23 +78,23 @@ export function TimelineApp({ events: initialEvents, isOwner }: TimelineAppProps
       })
       if (!res.ok) throw new Error("Failed to update")
       const updated = await res.json()
-      setEvents(prev => prev.map(e => e.id === id ? updated : e))
+      setEvents((prev) => prev.map((e) => (e.id === id ? updated : e)))
     } catch {
-      setEvents(prev => prev.map(e => e.id === id ? original : e))
+      setEvents((prev) => prev.map((e) => (e.id === id ? original : e)))
     }
   }
 
   async function handleDeleteEvent(id: string) {
-    const original = events.find(e => e.id === id)
+    const original = events.find((e) => e.id === id)
     if (!original) return
 
-    setEvents(prev => prev.filter(e => e.id !== id))
+    setEvents((prev) => prev.filter((e) => e.id !== id))
 
     try {
       const res = await fetch(`/api/events/${id}`, { method: "DELETE" })
       if (!res.ok) throw new Error("Failed to delete")
     } catch {
-      setEvents(prev => [...prev, original])
+      setEvents((prev) => [...prev, original])
     }
   }
 

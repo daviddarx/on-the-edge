@@ -1,9 +1,6 @@
-import coreWebVitals from "eslint-config-next/core-web-vitals";
-import nextTypescript from "eslint-config-next/typescript";
+import coreWebVitals from "eslint-config-next/core-web-vitals"
+import nextTypescript from "eslint-config-next/typescript"
 
-const eslintConfig = [
-  ...coreWebVitals,
-  ...nextTypescript,
-];
+const eslintConfig = [...coreWebVitals, ...nextTypescript]
 
-export default eslintConfig;
+export default eslintConfig
