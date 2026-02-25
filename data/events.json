@@ -28,15 +28,6 @@
       "description": "Publication des Principia Mathematica."
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440005",
-      "year": 1789,
-      "name": "Revolution francaise",
-      "category": "event",
-      "endYear": 1799,
-      "region": "France",
-      "description": null
-    },
-    {
       "id": "550e8400-e29b-41d4-a716-446655440006",
       "year": 1879,
       "name": "Albert Einstein",
