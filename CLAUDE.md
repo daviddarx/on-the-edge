@@ -86,6 +86,19 @@ cat.dotClass  // "bg-blue-500"
 `bg-${color}-500`
 ```
 
+### Always use `cn()` for combining Tailwind classes
+Use the `cn()` utility from `@/lib/utils` whenever combining multiple class strings or mixing conditional classes. Never use template literals for this.
+
+```typescript
+// CORRECT
+import { cn } from "@/lib/utils"
+<span className={cn("h-2.5 w-2.5 rounded-full", category?.dotClass)} />
+<div className={cn("mt-4", isOwner && "cursor-pointer")} />
+
+// WRONG
+<span className={`h-2.5 w-2.5 rounded-full ${category?.dotClass}`} />
+```
+
 ### Next.js 15: always await `params` in route handlers
 In Next.js 15, `params` in route handlers is a `Promise` and must be awaited.
 
