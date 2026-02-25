@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "year": -3000,
+      "name": "Invention de l'ecriture",
+      "category": "invention",
+      "endYear": null,
+      "region": "Mesopotamie",
+      "description": "Les Sumeriens developpent l'ecriture cuneiforme."
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "year": -27,
+      "name": "Empire romain",
+      "category": "civilization",
+      "endYear": 476,
+      "region": "Europe",
+      "description": "De la fondation de l'Empire par Auguste a la chute de Rome."
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440003",
+      "year": 1440,
+      "name": "Imprimerie",
+      "category": "invention",
+      "endYear": null,
+      "region": "Allemagne",
+      "description": "Gutenberg invente l'imprimerie a caracteres mobiles."
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440004",
+      "year": 1687,
+      "name": "Lois de Newton",
+      "category": "discovery",
+      "endYear": null,
+      "region": "Angleterre",
+      "description": "Publication des Principia Mathematica."
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440005",
+      "year": 1789,
+      "name": "Revolution francaise",
+      "category": "event",
+      "endYear": 1799,
+      "region": "France",
+      "description": null
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440006",
+      "year": 1879,
+      "name": "Albert Einstein",
+      "category": "person",
+      "endYear": 1955,
+      "region": "Allemagne",
+      "description": "Physicien theoricien, theorie de la relativite."
+    }
+  ]
+}

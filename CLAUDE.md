@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Status
 
-Scaffolding defined in `specs/`. Implementation not yet started. Update this section as phases are completed.
+Phase 1 (Scaffolding) complete. Implementation in progress.
 
 ## Tech Stack
 
