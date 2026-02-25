@@ -60,7 +60,7 @@ export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntr
 
         {/* Edit/Delete icons — visible on hover when owner */}
         {isOwner && (
-          <div className="flex gap-3 has-hover:opacity-0 has-hover:group-hover:opacity-100">
+          <div className="relative top-0.5 flex gap-2 has-hover:opacity-0 has-hover:group-hover:opacity-100">
             <button
               onClick={onEdit}
               className="text-muted-foreground hover:text-foreground"
