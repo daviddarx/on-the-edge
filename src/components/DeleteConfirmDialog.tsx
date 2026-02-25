@@ -38,17 +38,18 @@ export function DeleteConfirmDialog({
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Delete entry</DialogTitle>
+          <DialogTitle>Supprimer l&apos;entrée</DialogTitle>
           <DialogDescription>
-            Are you sure you want to delete &ldquo;{eventName}&rdquo;? This action cannot be undone.
+            Êtes-vous sûr de vouloir supprimer &laquo;&nbsp;{eventName}&nbsp;&raquo;&nbsp;? Cette
+            action est irréversible.
           </DialogDescription>
         </DialogHeader>
         <div className="flex justify-end gap-2">
           <Button variant="outline" onClick={onClose} disabled={loading}>
-            Cancel
+            Annuler
           </Button>
           <Button variant="destructive" onClick={handleConfirm} disabled={loading}>
-            {loading ? "Deleting..." : "Delete"}
+            {loading ? "Suppression..." : "Supprimer"}
           </Button>
         </div>
       </DialogContent>

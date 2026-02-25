@@ -16,7 +16,7 @@ export function Header({ isOwner, onAddNew }: HeaderProps) {
       <div className="flex justify-end gap-2">
         {isOwner && (
           <Button size="sm" onClick={onAddNew}>
-            Add a new date
+            Ajouter une date
           </Button>
         )}
         {status === "loading" ? (
@@ -25,18 +25,18 @@ export function Header({ isOwner, onAddNew }: HeaderProps) {
           </Button>
         ) : session ? (
           <Button variant="outline" size="sm" onClick={() => signOut()}>
-            Logout
+            Déconnexion
           </Button>
         ) : (
           <Button variant="outline" size="sm" onClick={() => signIn("github")}>
-            Login
+            Connexion
           </Button>
         )}
       </div>
       <div>
-        <h1 className="text-2xl font-bold">On the edge</h1>
+        <h1 className="text-2xl font-bold">Sur le fil</h1>
         <p className="text-muted-foreground">
-          Simple timeline viewer for major dates in human history.
+          Un coup d'oeil sur les dates importantes de l'histoire humaine.
         </p>
       </div>
     </div>

@@ -72,35 +72,35 @@ export function EventFormModal({ open, onClose, onSubmit, initialData }: EventFo
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>{initialData ? "Edit date" : "Add a new date"}</DialogTitle>
+          <DialogTitle>{initialData ? "Modifier la date" : "Ajouter une date"}</DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <Label htmlFor="year">Year *</Label>
+            <Label htmlFor="year">Année *</Label>
             <Input
               id="year"
               type="number"
               value={year}
               onChange={(e) => setYear(e.target.value)}
-              placeholder="e.g. 1969 or -44 for BC"
+              placeholder="ex. 1969 ou -44 pour av. J.-C."
               required
             />
           </div>
           <div>
-            <Label htmlFor="name">Name *</Label>
+            <Label htmlFor="name">Nom *</Label>
             <Input
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. Moon landing"
+              placeholder="ex. Alunissage"
               required
             />
           </div>
           <div>
-            <Label htmlFor="category">Category *</Label>
+            <Label htmlFor="category">Catégorie *</Label>
             <Select value={category} onValueChange={(v) => setCategory(v as Category)}>
               <SelectTrigger>
-                <SelectValue placeholder="Select a category" />
+                <SelectValue placeholder="Choisir une catégorie" />
               </SelectTrigger>
               <SelectContent>
                 {CATEGORIES.map((cat) => (
@@ -115,22 +115,22 @@ export function EventFormModal({ open, onClose, onSubmit, initialData }: EventFo
             </Select>
           </div>
           <div>
-            <Label htmlFor="endYear">End Year</Label>
+            <Label htmlFor="endYear">Année de fin</Label>
             <Input
               id="endYear"
               type="number"
               value={endYear}
               onChange={(e) => setEndYear(e.target.value)}
-              placeholder="Optional"
+              placeholder="Facultatif"
             />
           </div>
           <div>
-            <Label htmlFor="region">Region</Label>
+            <Label htmlFor="region">Région</Label>
             <Input
               id="region"
               value={region}
               onChange={(e) => setRegion(e.target.value)}
-              placeholder="e.g. Europe"
+              placeholder="ex. Europe"
             />
           </div>
           <div>
@@ -139,11 +139,11 @@ export function EventFormModal({ open, onClose, onSubmit, initialData }: EventFo
               id="description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              placeholder="Shown as tooltip on hover"
+              placeholder="Affiché en info-bulle au survol"
             />
           </div>
           <Button type="submit" disabled={loading || !year || !name || !category}>
-            {loading ? "Saving..." : initialData ? "Save" : "Add"}
+            {loading ? "Enregistrement..." : initialData ? "Enregistrer" : "Ajouter"}
           </Button>
         </form>
       </DialogContent>

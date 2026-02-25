@@ -6,8 +6,8 @@ import { Providers } from "@/components/Providers"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "On the Edge",
-  description: "Simple timeline viewer for major dates in human history.",
+  title: "Sur le fil",
+  description: "Un coup d'oeil sur les dates importantes de l'histoire humaine.",
 }
 
 export default function RootLayout({

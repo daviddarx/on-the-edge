@@ -32,10 +32,10 @@ export function TimelineControls({
           onValueChange={(v) => onCategoryChange(v as Category | "all")}
         >
           <SelectTrigger className="w-full">
-            <SelectValue placeholder="All categories" />
+            <SelectValue placeholder="Toutes les catégories" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All categories</SelectItem>
+            <SelectItem value="all">Toutes les catégories</SelectItem>
             {CATEGORIES.map((cat) => (
               <SelectItem key={cat.value} value={cat.value}>
                 <span className="flex items-center gap-2">
@@ -47,7 +47,7 @@ export function TimelineControls({
           </SelectContent>
         </Select>
         <Input
-          placeholder="Search by name or region..."
+          placeholder="Rechercher par nom ou région..."
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
         />
