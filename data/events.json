@@ -26,6 +26,15 @@
       "endYear": 1955,
       "region": "Allemagne",
       "description": "Physicien theoricien, theorie de la relativite."
+    },
+    {
+      "id": "b81e0eb5-0ba3-4e0d-9b72-c21ea8d197c5",
+      "year": 1840,
+      "name": "Préservatif industriel",
+      "category": "invention",
+      "endYear": null,
+      "region": null,
+      "description": "Antiquité (-1350 av. J.-C. - 100 ap. J.-C.) : Des étuis en lin fin étaient utilisés en Égypte. Les Romains utilisaient des intestins et vessies d'animaux."
     }
   ]
 }
