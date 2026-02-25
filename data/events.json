@@ -44,6 +44,15 @@
       "endYear": null,
       "region": "Suisse",
       "description": "LSD was first synthesized by Swiss chemist Albert Hofmann on November 16, 1938, at Sandoz Laboratories in Basel, Switzerland. However, its psychoactive properties were not discovered until April 19, 1943, when Hofmann accidentally ingested some of the substance, leading to the first intentional \"acid trip\""
+    },
+    {
+      "id": "b206ebc6-9b82-4152-ab31-7793a5d9d10f",
+      "year": 1836,
+      "name": "Revolver pistolet",
+      "category": "invention",
+      "endYear": null,
+      "region": "USA",
+      "description": "Les premiers pistolets, sous forme d'armes à feu de poing primitives, sont apparus en Europe dès le XIVe siècle avec les « canons à main ». Cependant, le terme pistolet désigne souvent des armes plus maniables qui se sont développées au fil des siècles, avec des mécanismes à mèche, à rouet, puis à silex à partir du XVIe siècle."
     }
   ]
 }
