@@ -3,30 +3,42 @@
 import { useSession, signIn, signOut } from "next-auth/react"
 import { Button } from "@/components/ui/button"
 
-export function Header() {
+interface HeaderProps {
+  isOwner: boolean
+  onAddNew: () => void
+}
+
+export function Header({ isOwner, onAddNew }: HeaderProps) {
   const { data: session, status } = useSession()
 
   return (
-    <div className="flex items-start justify-between">
+    <div className="flex flex-col gap-4">
+      <div className="flex justify-end gap-2">
+        {isOwner && (
+          <Button size="sm" onClick={onAddNew}>
+            Add a new date
+          </Button>
+        )}
+        {status === "loading" ? (
+          <Button variant="outline" size="sm" disabled>
+            ...
+          </Button>
+        ) : session ? (
+          <Button variant="outline" size="sm" onClick={() => signOut()}>
+            Logout
+          </Button>
+        ) : (
+          <Button variant="outline" size="sm" onClick={() => signIn("github")}>
+            Login
+          </Button>
+        )}
+      </div>
       <div>
         <h1 className="text-2xl font-bold">On the edge</h1>
-        <p className="mt-1 text-muted-foreground">
+        <p className="text-muted-foreground">
           Simple timeline viewer for major dates in human history.
         </p>
       </div>
-      {status === "loading" ? (
-        <Button variant="outline" size="sm" disabled>
-          ...
-        </Button>
-      ) : session ? (
-        <Button variant="outline" size="sm" onClick={() => signOut()}>
-          Logout
-        </Button>
-      ) : (
-        <Button variant="outline" size="sm" onClick={() => signIn("github")}>
-          Login
-        </Button>
-      )}
     </div>
   )
 }

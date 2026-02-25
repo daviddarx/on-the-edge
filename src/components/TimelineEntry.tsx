@@ -4,7 +4,7 @@ import { TimelineEvent, CATEGORIES } from "@/lib/types"
 import { formatYearRange } from "@/lib/format-year"
 import { cn } from "@/lib/utils"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
-import { Pencil, Trash2 } from "lucide-react"
+import { Info, Pencil, Trash2 } from "lucide-react"
 
 interface TimelineEntryProps {
   event: TimelineEvent
@@ -30,29 +30,32 @@ export function TimelineEntry({ event, isOwner, onEdit, onDelete }: TimelineEntr
       {/* Colored dot */}
       <span
         className={cn(
-          "absolute left-[-5px] top-[14px] h-2.5 w-2.5 rounded-full",
+          "absolute left-[-6px] top-[16px] h-[10px] w-[10px] rounded-full",
           category?.dotClass
         )}
       />
 
       {/* Content with optional tooltip */}
       <div className="flex items-baseline gap-2">
-        {event.description ? (
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <span className="cursor-help">{content}</span>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p className="max-w-xs">{event.description}</p>
-            </TooltipContent>
-          </Tooltip>
-        ) : (
-          content
-        )}
+        <span className="flex-1">
+          {content}
+          {event.description && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <span className="ml-1.5 inline-flex text-muted-foreground hover:text-foreground cursor-help">
+                  <Info className="h-3.5 w-3.5 top-0.5 relative" />
+                </span>
+              </TooltipTrigger>
+              <TooltipContent side="bottom">
+                <p className="max-w-xs">{event.description}</p>
+              </TooltipContent>
+            </Tooltip>
+          )}
+        </span>
 
         {/* Edit/Delete icons — visible on hover when owner */}
         {isOwner && (
-          <div className="flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+          <div className="flex gap-3 opacity-0 transition-opacity group-hover:opacity-100">
             <button
               onClick={onEdit}
               className="text-muted-foreground hover:text-foreground"

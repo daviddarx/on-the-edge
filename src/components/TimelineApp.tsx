@@ -100,14 +100,12 @@ export function TimelineApp({ events: initialEvents, isOwner }: TimelineAppProps
 
   return (
     <>
-      <Header />
+      <Header isOwner={isOwner} onAddNew={() => setFormModal({ open: true })} />
       <TimelineControls
-        isOwner={isOwner}
         categoryFilter={categoryFilter}
         onCategoryChange={setCategoryFilter}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
-        onAddNew={() => setFormModal({ open: true })}
       />
       <CategoryLegend visible={categoryFilter === "all"} />
       <Timeline

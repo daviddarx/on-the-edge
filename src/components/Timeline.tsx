@@ -16,7 +16,7 @@ export function Timeline({ events, isOwner, onEdit, onDelete }: TimelineProps) {
   }
 
   return (
-    <div className="relative mt-4 ml-3 border-l-2 border-muted">
+    <div className="relative mt-4 ml-1 border-l-2 border-muted">
       {events.map((event) => (
         <TimelineEntry
           key={event.id}
