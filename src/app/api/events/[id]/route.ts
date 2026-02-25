@@ -105,7 +105,7 @@ export async function PUT(
       return updated
     })
 
-    revalidateTag("events")
+    revalidateTag("events", {})
     return NextResponse.json(result)
   } catch (error) {
     if (error instanceof Error && error.message === "NOT_FOUND") {
@@ -144,7 +144,7 @@ export async function DELETE(
       await saveEvents(data, sha, `Delete: ${event.name}`)
     })
 
-    revalidateTag("events")
+    revalidateTag("events", {})
     return NextResponse.json({ success: true })
   } catch (error) {
     if (error instanceof Error && error.message === "NOT_FOUND") {

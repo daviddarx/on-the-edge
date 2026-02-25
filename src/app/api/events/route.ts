@@ -120,7 +120,7 @@ export async function POST(request: Request) {
       return newEvent
     })
 
-    revalidateTag("events")
+    revalidateTag("events", {})
     return NextResponse.json(result, { status: 201 })
   } catch (error) {
     console.error("POST /api/events error:", error)
