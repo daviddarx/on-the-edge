@@ -71,6 +71,15 @@
       "endYear": null,
       "region": "Allemagne",
       "description": "Le premier vol d'un engin plus lourd que l'air non motorisé (plané) a été réalisé bien avant le premier avion à moteur. Des planeurs fonctionnels, ancêtres de l'aviation, ont été testés dès le milieu du XIXe siècle, notamment par George Cayley qui fit voler un planeur dès 1853, suivi de Otto Lilienthal dans les années 1890"
+    },
+    {
+      "id": "bb37c0e2-fac3-4fc6-bf37-a7ba26985801",
+      "year": 500,
+      "name": "Échecs ",
+      "category": "invention",
+      "endYear": null,
+      "region": "Inde et Perse",
+      "description": "Les échecs ont été inventés en Inde vers le 6ème siècle de notre ère. Issu du « chaturanga », ce jeu s'est diffusé en Perse (chatrang) puis dans le monde arabe avant d'atteindre l'Europe vers l'an 1000. Les règles modernes ont été définies beaucoup plus tard, entre 1400 et 1600"
     }
   ]
 }
