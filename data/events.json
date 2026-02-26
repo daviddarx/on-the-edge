@@ -89,6 +89,15 @@
       "endYear": null,
       "region": "Italie",
       "description": "En 1800, le scientifique italien Alessandro Volta invente la pile voltaïque.  👉 C’est la première source d’électricité continue de l’histoire.  C’est un tournant majeur : pour la première fois, on peut produire un courant électrique stable."
+    },
+    {
+      "id": "5e648c50-9b73-4052-8981-eaccf0b95119",
+      "year": 1879,
+      "name": "Ampoule électrique ",
+      "category": "invention",
+      "endYear": null,
+      "region": "USA ",
+      "description": "En octobre 1879, Edison présente une ampoule à incandescence capable de fonctionner plus de 40 heures (puis rapidement plus de 1 000 heures)"
     }
   ]
 }
