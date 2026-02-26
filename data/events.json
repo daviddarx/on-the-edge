@@ -80,6 +80,15 @@
       "endYear": null,
       "region": "Inde et Perse",
       "description": "Les échecs ont été inventés en Inde vers le 6ème siècle de notre ère. Issu du « chaturanga », ce jeu s'est diffusé en Perse (chatrang) puis dans le monde arabe avant d'atteindre l'Europe vers l'an 1000. Les règles modernes ont été définies beaucoup plus tard, entre 1400 et 1600"
+    },
+    {
+      "id": "92ec9a68-f724-4539-b37b-48c6596b9374",
+      "year": 1800,
+      "name": "Pile électrique ",
+      "category": "invention",
+      "endYear": null,
+      "region": "Italie",
+      "description": "En 1800, le scientifique italien Alessandro Volta invente la pile voltaïque.  👉 C’est la première source d’électricité continue de l’histoire.  C’est un tournant majeur : pour la première fois, on peut produire un courant électrique stable."
     }
   ]
 }
