@@ -98,6 +98,15 @@
       "endYear": null,
       "region": "USA ",
       "description": "En octobre 1879, Edison présente une ampoule à incandescence capable de fonctionner plus de 40 heures (puis rapidement plus de 1 000 heures)"
+    },
+    {
+      "id": "f28f09cc-7fe1-48e0-83fc-f321959da1e5",
+      "year": 1860,
+      "name": "Epée",
+      "category": "invention",
+      "endYear": null,
+      "region": "France",
+      "description": null
     }
   ]
 }
