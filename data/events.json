@@ -107,6 +107,15 @@
       "endYear": null,
       "region": "France",
       "description": "Les premières véritables épées datent d’environ 1600 à 1500 av. J.-C., pendant l’âge du bronze."
+    },
+    {
+      "id": "b4dc2c3e-12d7-4a90-94be-93f6ff18a502",
+      "year": 1945,
+      "name": "Hiroshima",
+      "category": "event",
+      "endYear": null,
+      "region": "Japon",
+      "description": "Elle est larguée sur la ville japonaise d'Hiroshima, par les États-Unis, le 6 août 1945. La bombe mesure 3 m de long et 0,71 m de diamètre, elle pèse 4 082 kg, Ces proportions nécessitent un aménagement particulier de la soute du bombardier superfortress B 29 qui la transporte."
     }
   ]
 }
