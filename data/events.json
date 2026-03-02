@@ -143,6 +143,15 @@
       "endYear": null,
       "region": "Amérique",
       "description": "Christophe Colomb a posé le pied en Amérique le 12 octobre 1492. Lors de cette première expédition espagnole, il débarque sur l'île de Guanahani (Bahamas), qu'il nomme San Salvador. Ce voyage marque le début de la colonisation européenne et de l'échange colombien, bien qu'il pensait avoir atteint les Indes. "
+    },
+    {
+      "id": "7453816d-650b-4f86-aba4-9c053ea31387",
+      "year": 2022,
+      "name": "ChatGPT",
+      "category": "invention",
+      "endYear": null,
+      "region": null,
+      "description": null
     }
   ]
 }
