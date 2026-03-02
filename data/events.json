@@ -134,6 +134,15 @@
       "endYear": null,
       "region": "Europe",
       "description": "La théorie plaçant le Soleil au centre du système (héliocentrisme) a été formalisée par Nicolas Copernic vers 1513, puis publiée en 1543, bien qu'Aristarque de Samos l'ait déjà envisagé dès le IIIe siècle av. J.-C.. Galilée a ensuite confirmé cette théorie avec des observations télescopiques au début du XVIIe siècle."
+    },
+    {
+      "id": "8b83732b-e2dd-490b-9297-1bb1aac400cb",
+      "year": 1492,
+      "name": "Colonisation européenne de l’Amérique",
+      "category": "civilization",
+      "endYear": null,
+      "region": "Amérique",
+      "description": "Christophe Colomb a posé le pied en Amérique le 12 octobre 1492. Lors de cette première expédition espagnole, il débarque sur l'île de Guanahani (Bahamas), qu'il nomme San Salvador. Ce voyage marque le début de la colonisation européenne et de l'échange colombien, bien qu'il pensait avoir atteint les Indes. "
     }
   ]
 }
