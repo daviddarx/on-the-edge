@@ -125,6 +125,15 @@
       "endYear": null,
       "region": "Europe",
       "description": "La rotondité de la Terre est connue depuis l'Antiquité grecque, dès le VIe siècle av. J.-C. avec Pythagore. La preuve scientifique a été apportée au IVe siècle av. J.-C. par Aristote (éclipses) et la mesure de sa circonférence par Ératosthène au IIIe siècle av. J.-C.."
+    },
+    {
+      "id": "8c6f7b96-4b38-4bbc-b455-fda0e019fc67",
+      "year": 1513,
+      "name": "Soleil au centre",
+      "category": "discovery",
+      "endYear": null,
+      "region": "Europe",
+      "description": "La théorie plaçant le Soleil au centre du système (héliocentrisme) a été formalisée par Nicolas Copernic vers 1513, puis publiée en 1543, bien qu'Aristarque de Samos l'ait déjà envisagé dès le IIIe siècle av. J.-C.. Galilée a ensuite confirmé cette théorie avec des observations télescopiques au début du XVIIe siècle."
     }
   ]
 }
