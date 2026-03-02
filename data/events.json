@@ -116,6 +116,15 @@
       "endYear": null,
       "region": "Japon",
       "description": "Elle est larguée sur la ville japonaise d'Hiroshima, par les États-Unis, le 6 août 1945. La bombe mesure 3 m de long et 0,71 m de diamètre, elle pèse 4 082 kg, Ces proportions nécessitent un aménagement particulier de la soute du bombardier superfortress B 29 qui la transporte."
+    },
+    {
+      "id": "47516ef6-8098-4577-a4f6-c57f461aebc5",
+      "year": -600,
+      "name": "Terre ronde",
+      "category": "discovery",
+      "endYear": null,
+      "region": "Europe",
+      "description": "La rotondité de la Terre est connue depuis l'Antiquité grecque, dès le VIe siècle av. J.-C. avec Pythagore. La preuve scientifique a été apportée au IVe siècle av. J.-C. par Aristote (éclipses) et la mesure de sa circonférence par Ératosthène au IIIe siècle av. J.-C.."
     }
   ]
 }
