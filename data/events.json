@@ -161,6 +161,15 @@
       "endYear": null,
       "region": null,
       "description": "L'hélicoptère a été inventé au début du XXe siècle, le premier vol libre et vertical étant réalisé par le Français Paul Cornu le 13 novembre 1907. Bien que le concept remonte à Léonard de Vinci en 1486, les premiers modèles fonctionnels et pratiques, notamment ceux d'Igor Sikorsky, sont apparus vers 1939-1941"
+    },
+    {
+      "id": "85523d15-bf9a-4bda-bc41-18636e8d1894",
+      "year": 1804,
+      "name": "Train",
+      "category": "invention",
+      "endYear": null,
+      "region": "Pays de Galles",
+      "description": "L'invention du train moderne est indissociable de celle de la locomotive à vapeur au début du XIXe siècle. Le premier train à traction mécanique a circulé le 21 février 1804 au pays de Galles."
     }
   ]
 }
