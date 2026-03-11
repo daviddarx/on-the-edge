@@ -152,6 +152,15 @@
       "endYear": null,
       "region": null,
       "description": null
+    },
+    {
+      "id": "8b4071e0-0582-4f68-b700-72a5251d8d70",
+      "year": 1939,
+      "name": "Hélicoptère ",
+      "category": "invention",
+      "endYear": null,
+      "region": null,
+      "description": "L'hélicoptère a été inventé au début du XXe siècle, le premier vol libre et vertical étant réalisé par le Français Paul Cornu le 13 novembre 1907. Bien que le concept remonte à Léonard de Vinci en 1486, les premiers modèles fonctionnels et pratiques, notamment ceux d'Igor Sikorsky, sont apparus vers 1939-1941"
     }
   ]
 }
