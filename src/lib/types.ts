@@ -34,6 +34,13 @@ export const CATEGORIES = [
     dotClass: "bg-amber-500",
     textClass: "text-amber-500",
   },
+  {
+    value: "art-culture",
+    label: "Art & Culture",
+    color: "#ec4899",
+    dotClass: "bg-pink-500",
+    textClass: "text-pink-500",
+  },
 ] as const
 
 export type Category = (typeof CATEGORIES)[number]["value"]
