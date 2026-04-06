@@ -179,6 +179,15 @@
       "endYear": 1889,
       "region": "France",
       "description": null
+    },
+    {
+      "id": "0f2d25e5-6983-4a3b-a764-109a3254498b",
+      "year": 1988,
+      "name": "Roger rabbit ",
+      "category": "art-culture",
+      "endYear": null,
+      "region": "USA",
+      "description": null
     }
   ]
 }
