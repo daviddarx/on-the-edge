@@ -197,6 +197,15 @@
       "endYear": null,
       "region": "USA",
       "description": null
+    },
+    {
+      "id": "39bbed0d-0aba-41cc-b598-8276970beca3",
+      "year": 1776,
+      "name": "USA",
+      "category": "civilization",
+      "endYear": null,
+      "region": "USA",
+      "description": "À sa naissance, le pays ne comptait que 13 États situés sur la côte est, dont le Delaware, la Pennsylvanie, New York et la Virginie. Le territoire s'est ensuite étendu vers l'ouest pour atteindre les 50 États actuels."
     }
   ]
 }
