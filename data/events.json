@@ -215,6 +215,15 @@
       "endYear": 1965,
       "region": "Belgique, Royaume-Uni, Etats-Unis",
       "description": "La théorie du Big Bang a émergé au début du XXᵉ siècle, notamment grâce à Georges Lemaître, qui proposa en 1927 que l’Univers était en expansion à partir d’un état initial extrêmement dense et chaud."
+    },
+    {
+      "id": "219b102d-3b2e-461f-8890-3ef66ae6fef2",
+      "year": 1789,
+      "name": "Révolution francaise",
+      "category": "event",
+      "endYear": 1799,
+      "region": "France",
+      "description": "La Révolution française, commencée en 1789, renversa la monarchie et transforma profondément la société française en proclamant la liberté, l’égalité des citoyens et la souveraineté du peuple."
     }
   ]
 }
