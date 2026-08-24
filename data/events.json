@@ -206,6 +206,15 @@
       "endYear": null,
       "region": "USA",
       "description": "À sa naissance, le pays ne comptait que 13 États situés sur la côte est, dont le Delaware, la Pennsylvanie, New York et la Virginie. Le territoire s'est ensuite étendu vers l'ouest pour atteindre les 50 États actuels."
+    },
+    {
+      "id": "9b66f956-82df-4f49-bbfd-21583cf3c88d",
+      "year": 1927,
+      "name": "Théorie du Big Bang",
+      "category": "discovery",
+      "endYear": 1965,
+      "region": "Belgique, Royaume-Uni, Etats-Unis",
+      "description": "La théorie du Big Bang a émergé au début du XXᵉ siècle, notamment grâce à Georges Lemaître, qui proposa en 1927 que l’Univers était en expansion à partir d’un état initial extrêmement dense et chaud."
     }
   ]
 }
