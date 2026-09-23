@@ -224,6 +224,15 @@
       "endYear": 1799,
       "region": "France",
       "description": "La Révolution française, commencée en 1789, renversa la monarchie et transforma profondément la société française en proclamant la liberté, l’égalité des citoyens et la souveraineté du peuple."
+    },
+    {
+      "id": "578ab3a2-8a94-49b0-a507-22cadb53bb92",
+      "year": 1862,
+      "name": "Les misérables - Victor Hugo",
+      "category": "art-culture",
+      "endYear": null,
+      "region": null,
+      "description": "Histoire de 1815 à 1833"
     }
   ]
 }
