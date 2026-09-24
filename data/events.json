@@ -233,6 +233,15 @@
       "endYear": null,
       "region": null,
       "description": "Histoire de 1815 à 1833"
+    },
+    {
+      "id": "855ea6ea-97f0-4eb9-8c6c-773920964b2a",
+      "year": 708,
+      "name": "Mont St-Michel ",
+      "category": "civilization",
+      "endYear": 1204,
+      "region": "France",
+      "description": "l'évêque Aubert, le Mont Saint-Michel se transforme au fil des siècles sous l'impulsion des moines bénédictins pour devenir, dès 1204, une puissante abbaye romane doté"
     }
   ]
 }
